@@ -1,0 +1,127 @@
+.homepage {
+  width: 100%;
+}
+
+.homepage-container {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.homepage-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.homepage-sidebar {
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+}
+
+.homepage .hero {
+  background: linear-gradient(135deg, #003366 0%, #0055aa 100%);
+  color: #fff;
+  padding: 3.5rem 2.5rem;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 51, 102, 0.15);
+}
+
+.homepage .hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.homepage .hero p {
+  font-size: 1.1rem;
+  margin: 0;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 51, 102, 0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid #003366;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 51, 102, 0.15);
+  border-left-color: #ffcc00;
+}
+
+.feature-card h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #003366;
+  font-size: 1.3rem;
+}
+
+.feature-card p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .homepage-container {
+    grid-template-columns: 1fr;
+  }
+
+  .homepage-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage .hero {
+    padding: 2.5rem 2rem;
+  }
+
+  .homepage .hero h1 {
+    font-size: 2rem;
+  }
+
+  .homepage .hero p {
+    font-size: 1rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage .hero {
+    padding: 2rem 1.5rem;
+  }
+
+  .homepage .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+  }
+
+  .feature-card h2 {
+    font-size: 1.1rem;
+  }
+}

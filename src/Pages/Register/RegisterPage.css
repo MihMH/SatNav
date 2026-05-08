@@ -1,0 +1,117 @@
+.PageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 2rem;
+}
+
+.RegisterContainer {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 51, 102, 0.15);
+  width: 100%;
+  max-width: 420px;
+  border-top: 4px solid #0055aa;
+}
+
+.RegisterContainer h1 {
+  color: #003366;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.FIOContainer,
+.EmailContainer,
+.PasswordContainer {
+  margin-bottom: 1.5rem;
+}
+
+.RegisterContainer label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.RegisterContainer input {
+  width: 100%;
+  padding: 0.85rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.RegisterContainer input:focus {
+  outline: none;
+  border-color: #0055aa;
+  box-shadow: 0 0 12px rgba(0, 85, 170, 0.2);
+}
+
+.RegisterContainer button {
+  width: 100%;
+  background: linear-gradient(135deg, #003366 0%, #0055aa 100%);
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
+}
+
+.RegisterContainer button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 51, 102, 0.3);
+}
+
+.RegisterContainer button:active {
+  transform: translateY(0);
+}
+
+.error {
+  color: #d32f2f;
+  background-color: #ffebee;
+  padding: 0.85rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  border-left: 4px solid #d32f2f;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.success {
+  color: #1b5e20;
+  background-color: #e8f5e9;
+  padding: 0.85rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  border-left: 4px solid #1b5e20;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .PageContainer {
+    min-height: auto;
+  }
+
+  .RegisterContainer {
+    padding: 1.5rem;
+  }
+
+  .RegisterContainer h1 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+}

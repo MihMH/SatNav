@@ -1,0 +1,81 @@
+.admissionspage {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.admissionspage h1 {
+  color: #003366;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.admissionspage > p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.admissionspage p strong {
+  color: #003366;
+  font-weight: 600;
+}
+
+.admissionspage ol {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 51, 102, 0.1);
+  margin: 1.5rem 0;
+}
+
+.admissionspage ol li {
+  margin-bottom: 1rem;
+  color: #555;
+  line-height: 1.6;
+  padding-left: 0.5rem;
+}
+
+.admissionspage ol li:last-child {
+  margin-bottom: 0;
+}
+
+.admissionspage ol li:before {
+  color: #0055aa;
+  font-weight: bold;
+}
+
+.admissionspage > p:last-child {
+  background: #f0f7ff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #0055aa;
+}
+
+.admissionspage a {
+  color: #0055aa;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.admissionspage a:hover {
+  color: #003366;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .admissionspage {
+    padding: 0;
+  }
+
+  .admissionspage h1 {
+    font-size: 1.5rem;
+  }
+
+  .admissionspage ol {
+    padding: 1.5rem;
+  }
+}
