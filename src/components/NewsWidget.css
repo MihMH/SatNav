@@ -1,0 +1,102 @@
+.news-widget {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 51, 102, 0.08);
+  overflow: hidden;
+  min-width: 300px;
+  max-width: 100%;
+}
+
+.widget-header {
+  background: linear-gradient(135deg, #003366 0%, #0055aa 100%);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-bottom: 3px solid #ffcc00;
+}
+
+.widget-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.news-feed {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.news-card {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e8e8e8;
+  transition: all 0.3s ease;
+}
+
+.news-card:last-child {
+  border-bottom: none;
+}
+
+.news-card:hover {
+  background-color: #f8f9fa;
+  transform: translateX(4px);
+}
+
+.news-date {
+  font-size: 0.75rem;
+  color: #0055aa;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.news-card h4 {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #003366;
+  line-height: 1.4;
+}
+
+.news-card p {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Scrollbar styling */
+.news-feed::-webkit-scrollbar {
+  width: 6px;
+}
+
+.news-feed::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.news-feed::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 3px;
+}
+
+.news-feed::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+@media (max-width: 1200px) {
+  .news-widget {
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-widget {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+
+  .news-feed {
+    max-height: 400px;
+  }
+}

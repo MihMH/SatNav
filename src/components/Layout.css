@@ -1,0 +1,28 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-left: 280px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    margin-left: 0;
+  }
+
+  .main-content {
+    padding: 3.5rem 1.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 2rem 1rem 1rem;
+  }
+}
